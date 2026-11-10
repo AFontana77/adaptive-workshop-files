@@ -1,0 +1,22 @@
+Build log from 2026-10-17. The file posted here is the clean one, without the ID number the log mentions.
+
+CHANGES to Key Turner (makersmakingchange/Key-Turner), file Key_Turner.stl
+Made 2026-10-17 by the 3D Print Portfolio (Adaptive Workshop) build session.
+Why: we print and sell this part. The owner asked that Makers Making Change marks come off the part itself.
+Credit to the designer and Makers Making Change goes in the listing and the insert card instead (see assistive/ATTRIBUTION.md).
+
+What was removed:
+  The text "MAKERS MAKING CHANGE" cut 1.5 mm into the flat top of the key ring, following the curve of the ring.
+
+How:
+  Filled flush. The letter floors (flat, 1.5 mm down) give the exact letter outlines. Each outline, grown by 0.25 mm and kept inside the flat top face, was filled up to the face level (method plane in mmc_fill.py). Our number is on the bed face and was not touched.
+
+Files:
+  source/, prep/ and numbered/ now hold the cleaned files. Our debossed number is unchanged.
+  with-mmc-marks/ holds the files exactly as they were before this change.
+  This is a modified version of a share-alike design. The modified files stay under the same license as the original.
+
+Checks (orig = part before our number, numbered = part with our number):
+  04 orig: closed mesh True, bodies 1 -> 1, bounding box change 0.0 mm, volume 12854.05 -> 13066.34 mm3, surface outside the edit area moved at most 0.0005 mm
+  04 numbered: closed mesh True, bodies 1 -> 1, bounding box change 0.0 mm, volume 12838.3 -> 13050.59 mm3, surface outside the edit area moved at most 0.0006 mm
+  Before and after renders: assistive/builds/mmc_strip/evidence/<label>/
